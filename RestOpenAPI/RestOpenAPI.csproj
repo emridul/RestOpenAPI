@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="TextCode\appsettings.Development.json.txt" />
+    <None Remove="TextCode\appsettings.json.txt" />
+    <None Remove="TextCode\Program.cs.txt" />
+    <None Remove="TextCode\Startup.cs.txt" />
+    <None Remove="TextCode\WeatherForecast.cs.txt" />
+    <None Remove="TextCode\WeatherForecastController.cs.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="TextCode\" />
+  </ItemGroup>
+
+
+</Project>
